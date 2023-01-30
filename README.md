@@ -1,6 +1,8 @@
 # FormsPinkala
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0
+
+Este proyecto muestra un login sencillo y contiene un formulario reactivo. Consta de tres inputs dos de los cuales, guian al usuario los datos que deben ingresar en cuanto al formato y la cantidad de caracteres. 
 
 ## Development server
 
