@@ -1,0 +1,19 @@
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header'
+    'main   main    main  main   main   main    main';
+
+    
+}
+
+.grid-header{
+    grid-area: header;
+    background-color: #8a2be2;
+}
+
+.grid-login{
+    grid-area: main;
+    background-color: #D7DAE5;
+    
+}

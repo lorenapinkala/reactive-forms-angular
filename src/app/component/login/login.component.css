@@ -1,0 +1,61 @@
+.content{
+    
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valido{
+    color: green;
+}
+
+.invalido{
+    color:red;
+}
+
+.formulario{
+    
+    width: 35%;
+    height:55vh;
+    margin-right: 2.5em;
+    
+}
+
+.inputs{
+    
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.caja-input{
+
+    width: 29.68em;
+    height: 70px;
+}
+
+.logueo{
+   
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.logueo button{
+    width: 95%;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.signup{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}

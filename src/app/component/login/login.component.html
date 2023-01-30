@@ -1,0 +1,42 @@
+<div class="content">
+  <div class="formulario">
+<form [formGroup]="formularioLogin" (ngSubmit)="login()">
+
+    <div class="inputs">
+        <div class="caja-input">
+        <input type="email" class="form-control" placeholder="correo electrónico" formControlName="correo">
+        <div class="valido" *ngIf="formularioLogin.controls['correo'].touched && formularioLogin.controls['correo'].valid">Campo correcto</div>
+        <div class="invalido" *ngIf="formularioLogin.controls['correo'].touched && formularioLogin.controls['correo'].errors?.['required']">El campo correo es requerido</div>
+        <div class="invalido" *ngIf="formularioLogin.controls['correo'].errors?.['pattern']">El campo correo tiene un formato incorrecto</div>
+      </div>
+
+        <div class="caja-input">
+        <input type="password" class="form-control" placeholder="Contraseña" formControlName="contrasena">
+        <div class="valido" *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['contrasena'].valid">Contraseña correcta</div>
+        <div class="invalido" *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['contrasena'].errors?.['required']">La contraseña no puede estar vacia</div>
+        <div class="invalido" *ngIf="formularioLogin.controls['contrasena'].errors?.['minlength']">Contraseña debe tener al menos 5 caracteres</div>
+      </div>
+      
+      </div>
+    
+      <div class="check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="recordarCredenciales">
+        <label for="exampleCheck1" class="form-check-label">Recordar credenciales</label>
+      </div>
+
+      <div class="logueo">
+        <button type="submit" class="btn btn-primary" (click)="login()" [disabled]="formularioLogin.invalid">Iniciar sesión</button>
+      </div>
+
+      <br>
+      <hr/>
+      <div class="signup">
+        <button type="button" class="btn btn-success" (click)="login()">Crear nueva cuenta</button>
+      </div> 
+      
+      
+</form>
+
+
+</div>
+</div>
